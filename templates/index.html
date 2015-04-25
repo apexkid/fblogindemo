@@ -1,0 +1,29 @@
+<h1> Hello </h1>
+
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<script>
+	FB.init({appId: '', xfbml: true, cookie: true});
+
+	function FacebookInviteFriends()
+	{
+		FB.ui({
+          	method: 'send',
+          	name: 'People Argue Just to Win',
+          	link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
+          	to: 841888432568719,
+          	description: 'hello world'
+          });
+	}
+</script>
+</head>
+
+
+<body>
+	//HTML Code
+	<div id="fb-root"></div>
+	<a href='#' onclick="FacebookInviteFriends();"> Facebook Invite Friends Link </a>
+</body>
+
+</html>
